@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Poppins:wght@200;300;400;500;600;700&family=Raleway&family=Rubik&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Baloo Thambi 2', cursive;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Rubik', sans-serif;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo img{
+            width: 145px;
+        }
+        nav{
+            flex: 1;
+            text-align:right ;
+        }
+        nav ul{
+            display: inline-block;
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #555;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 20px auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .col-2{
+            flex-basis: 50%;
+            min-width: 300px;
+        }
+        .col-2 img{
+            width: 100%;
+            padding: 30px 0 ;
+        }
+        .col-2 h1{
+            font-size: 50px;
+            line-height: 60px;
+            margin: 25px 0;
+        }
+        .col-2 a{
+            display: inline-block;
+            text-decoration: none;
+            padding:10px 30px ;
+            background:#16a7b4 ;
+            color: #fff;
+            border-radius: 30px ;
+            margin-top: 25px;
+            transition: background 0.5s;
+        }
+        .col-2 a:hover{
+            background:#106e77 ;
+        }
+        p{
+            color: #555;
+        }
+        .header-section{
+            margin-top: -20px;
+            background: radial-gradient(#fff, #eaf2fb);
+        }
+/* style de la section categorie */
+        .categories{
+            margin: 70px 0;
+        }
+        .col-3{
+            flex-basis: 30%;
+            min-width: 250px;
+            margin:auto ;
+        }
+        .col-3 img{
+            width: 100%;
+        }
+        .col-3:hover{
+            padding-inline-start: 5px;
+            box-shadow: rgb(68, 68, 68) 3px 2px 20px;
+            
+        }
+        .container h2{
+            text-align: center;
+            font-size:2.2rem;
+            color: #444;
+            margin: 50px 0;
+        }
+/* section des meilleurs produits */
+        .col-4{
+            flex-basis: 25%;
+            min-width: 200px;
+            padding: 15px;
+            transition: transform 0.4s;
+        }
+        .col-4 img{
+            width: 100%;
+        }
+        .col-4:hover{
+            transform: translateY(-10px);
+        }
+        .pr{
+            font-family: 'Montserrat', sans-serif;
+        }
+        .rating , .fa-solid , .fa{
+            color: #16a7b4;
+        }
+    </style>
+</head>
+<body>
+    <section class="header-section">
+        <div class="container">
+    <header class="navbar">
+        <div class="logo">
+            <img src="../my site/images/logo.png" alt="logo icone">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="">Produits</a></li>
+                <li><a href="">Apropos</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="../my site/login.html">Account</a></li>
+
+            </ul>
+            <img src="../my site/images/cart.png" alt="cart icone" width="26px">
+        </nav>
+    </header>
+    <div class="row">
+        <div class="col-2">
+            <h1>Donnez a votre entrainement<br> un nouveau style!</h1>
+            <p>Le Succes n'est pas toujours une question de grandeur.<br>c'est une question de coherence. un travil acharne et consistant gagne du succes. la grandeur viendra</p>
+            <a href="">Explorez Maintenant &#8594;</a>
+        </div>
+        <div class="col-2">
+            <img src="../my site/images/image1.png" alt="loading image" >
+        </div>
+    </div>
+    </section>
+<!--section des categories-->
+    <section class="categories">
+        <div class="container">
+            <h2>Categories Veddetes</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="../my site/images/category-1.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="../my site/images/category-2.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="../my site/images/category-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--meilleurs produits-->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Meilleurs Produits</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="../my site/images/product-1.jpg" alt="Produit 1">
+                    <h3>T-shirt Rouge</h3>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="pr">100 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="../my site/images/product-2.jpg" alt="Produit 2">
+                    <h3>Shoes</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="pr">400 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="../my site/images/product-3.jpg" alt="Produit 3">
+                    <h3>Jogger Sweatpants</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <p class="pr">150 DH</p> 
+                </div>
+                <div class="col-4">
+                    <img src="../my site/images/product-4.jpg" alt="Produit 4">
+                    <h3>Polo T-shirt</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="pr">200 DH</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- nos derniers produits -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Nos Derniers Produits</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="../my site/images/product-5.jpg" alt="Produit 1">
+                    <h3>Sneakers</h3>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <p class="pr">950 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="../my site/images/product-6.jpg" alt="Produit 2">
+                    <h3>T-shirt Black</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <p class="pr">199 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="../my site/images/product-7.jpg" alt="Produit 3">
+                    <h3>Socks</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="pr">99 DH</p> 
+                </div>
+                <div class="col-4">
+                    <img src="../my site/images/product-8.jpg" alt="Produit 4">
+                    <h3>Watch</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="pr">750 DH</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="../my site/images/product-9.jpg" alt="Produit 1">
+                    <h3>Sports Watch </h3>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <p class="pr">500 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="../my site/images/product-10.jpg" alt="Produit 2">
+                    <h3>Shoes</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <p class="pr">420 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="../my site/images/product-11.jpg" alt="Produit 3">
+                    <h3>Women Shoes</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-solid fa-star-half-o"></i>
+                    </div>
+                    <p class="pr">350 DH</p> 
+                </div>
+                <div class="col-4">
+                    <img src="../my site/images/product-12.jpg" alt="Produit 4">
+                    <h3>Jogger Sweatpants</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <p class="pr">290 DH</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
